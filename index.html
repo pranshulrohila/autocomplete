@@ -10,6 +10,20 @@
 </head>
 
 <body>
+    <select id="region" onchange="populateEntity();populateComp()">
+        <option value="">Select the Region</option>
+        <option value="AMRS">AMRS</option>
+        <option value="APAC">APAC</option>
+        <option value="EMEA">EMEA</option>
+    </select>
+    
+    <select id="entity" onchange="populateComp()">
+        <option value="">Select the Entity</option>
+    </select>
+    
+    <select id="comp">
+        <option value="">Select the Computation</option>
+    </select>
     <h1>Autocomplete Inputs of Country</h1>
     <form action="" autocomplete="off">
         <div id="autocomplete-wrapper" class="autocomplete-wrapper">
